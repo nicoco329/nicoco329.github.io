@@ -41,16 +41,17 @@
     <h2 class="section-title">Midterm</h2>
     <div class="tabs">
       <button class="tab-btn active" onclick="showTab('quiz')">📝 Assignment</button>
+      <button class="tab-btn" onclick="showTab('quizzes')">🧠 Quiz</button>
       <button class="tab-btn" onclick="showTab('seatwork')">🪑 Seatwork</button>
       <button class="tab-btn" onclick="showTab('activities')">💻 Activities</button>
       <button class="tab-btn" onclick="showTab('exam')">📋 Exam</button>
     </div>
 
-    <!-- ── QUIZZES ── -->
+    <!-- ── Assignments ── -->
     <div class="tab-panel active" id="tab-quiz">
       <div class="activity-card" style="margin-bottom:24px;">
         <h3>Assignment 1</h3>
-      </div>
+
       <!-- Q1 -->
       <div class="qa-card">
         <div class="qa-header" onclick="toggleQA(this)">
@@ -136,6 +137,7 @@ Interpreted Languages - runs through a program line by line and execute each com
 Java is both compiled and interpreted</p>
         </div>
       </div>
+    </div>
 
       <div class="reflection-box">
         <div class="rl">📓 Reflection</div>
@@ -147,6 +149,22 @@ Java is both compiled and interpreted</p>
 
       <!-- Add more questions below by copying the qa-card block above -->
     </div>
+
+    <!-- ── QUIZ ── -->
+    <div class="tab-panel" id="tab-quizzes">
+      <div class="activity-card" style="margin-bottom:24px;">
+        <h3>Quiz 1</h3>
+        <p>Score: 36/45</p>
+      </div><!-- /activity-card -->
+
+      <div class="reflection-box">
+        <div class="rl">📓 Reflection</div>
+        <p style="color:var(--muted); font-size:0.92rem;">
+          The quiz helped me to test my knowledge regarding the concepts of OOP such as Inheritance, Encapsulation
+          Abstraction, and Polymorphism. It also tackled control flow statements, input/output, and methods.
+        </p>
+      </div>
+    </div><!-- /tab-quizzes -->
 
     <!-- ── SEATWORK ── -->
     <div class="tab-panel" id="tab-seatwork">
@@ -339,7 +357,7 @@ Miguel   5000.00</pre>
         </div>
 
         <div class="learnings-box">
-          <div class="ll">Reflection</div>
+          <div class="ll">Learnings</div>
           <p>This activity showed stack and heap memory. It also showed multiple objects and some pointed to the same memory address, which can change multiple values.</p>
         </div>
       </div>
@@ -664,7 +682,7 @@ public class EnrollmentAssessmentSystemOrgas {
 </pre>
         </div>
         <div class="learnings-box">
-          <div class="ll">Reflection</div>
+          <div class="ll">Learnings</div>
           <p>I learned to use scanners and control flow statements like switch and else-if statements, for creating menus and other conditional statements in Java programs.</p>
         </div>
         <div class="pdf-view-box" style="margin-top:16px;">
@@ -740,7 +758,7 @@ public class ExpenseTrackerOrgas {
 </pre>
         </div>
         <div class="learnings-box">
-          <div class="ll">Reflection</div>
+          <div class="ll">Learnings</div>
           <p>I learned to use methods with attributes, so that my code will be more efficient. 
             It also helps it to be modular and reusable so that when it has errors, I can easily fix and
             shorten my code so I won't have to retype the code block over and over again.</p>
@@ -801,11 +819,11 @@ public class ExpenseTrackerOrgas {
       </div>
       <div class="contact-item">
         <div class="ci-label">Facebook / Messenger</div>
-        <div class="ci-value">https://www.facebook.com/knicolai22</div>
+        <div class="ci-value"><a href="https://www.facebook.com/knicolai22" style="text-decoration: underline; color: white;">https://www.facebook.com/knicolai22</a></div>
       </div>
       <div class="contact-item">
         <div class="ci-label">GitHub</div>
-        <div class="ci-value">https://github.com/nicoco329</div>
+        <div class="ci-value"><a href="https://github.com/nicoco329" style="text-decoration: underline; color: white;">https://github.com/nicoco329</a></div>
       </div>
     </div>
   </div>
