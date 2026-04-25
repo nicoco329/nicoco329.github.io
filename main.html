@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OOP E-Portfolio | Midterm Project</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ─── NAV ─── -->
+<nav>
+  <div class="nav-logo">⟨ OOP Portfolio /⟩</div>
+  <ul class="nav-links">
+    <li><a href="#" onclick="showPage('home')" class="active" id="nav-home">Home</a></li>
+    <li><a href="#" onclick="showPage('midterm')" id="nav-midterm">Midterm</a></li>
+    <li><a href="#" onclick="showPage('final')" id="nav-final">Final</a></li>
+    <li><a href="#" onclick="showPage('contact')" id="nav-contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ═══════════════ HOME PAGE ═══════════════ -->
+<div class="page active" id="page-home">
+  <div class="hero">
+    <div class="hero-badge">📚 E-Portfolio · 2026</div>
+    <h1>Kiel Nicolai D. Orgas</h1>
+    <p class="hero-sub">Course: Object-Oriented Programming &nbsp;·&nbsp; Section: BSIT 2-3</p>
+    <p class="hero-sub" style="margin-top:4px;">School: Polytechnic University of the Philippines</p>
+    <div class="hero-intro">
+      This e-portfolio presents my Midterm Project in Object-Oriented Programming using Wix.
+      It includes quizzes, activities, and exams that demonstrate my understanding of OOP concepts
+      such as classes, objects, inheritance, encapsulation, and polymorphism through Java programming exercises.
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ MIDTERM PAGE ═══════════════ -->
+<div class="page" id="page-midterm">
+  <div class="section">
+    <h2 class="section-title">Midterm</h2>
+    <div class="tabs">
+      <button class="tab-btn active" onclick="showTab('quiz')">📝 Assignment</button>
+      <button class="tab-btn" onclick="showTab('seatwork')">🪑 Seatwork</button>
+      <button class="tab-btn" onclick="showTab('activities')">💻 Activities</button>
+      <button class="tab-btn" onclick="showTab('exam')">📋 Exam</button>
+    </div>
+
+    <!-- ── QUIZZES ── -->
+    <div class="tab-panel active" id="tab-quiz">
+      <div class="activity-card" style="margin-bottom:24px;">
+        <h3>Assignment 1</h3>
+      </div>
+      <!-- Q1 -->
+      <div class="qa-card">
+        <div class="qa-header" onclick="toggleQA(this)">
+          <span class="q-num">1</span>
+          <span class="q-text">What is Java programming language? Discuss its key features and advantages.</span>
+          <span class="qa-toggle">▼</span>
+        </div>
+        <div class="qa-body">
+          <div class="answer-label">Answer</div>
+          <p class="answer-text">Java is a high-level, general purpose, object oriented programming language. 
+            It is owned by Oracle and used for mobile applications, desktop applications, games, and many more. 
+            One of its advantages is that it works on many different platforms such as Windows, Mac, Linux, Raspberry Pi, etc. 
+            It also has a high and large demand in the current job market.</p>
+        </div>
+      </div>
+
+      <!-- Q2 -->
+      <div class="qa-card">
+        <div class="qa-header" onclick="toggleQA(this)">
+          <span class="q-num">2</span>
+          <span class="q-text">Explain the concept of platform independence in Java. How does Java achieve platform independence?</span>
+          <span class="qa-toggle">▼</span>
+        </div>
+        <div class="qa-body">
+          <div class="answer-label">Answer</div>
+          <p class="answer-text">Platform-independent means that Java's byte code can run all operating systems. 
+            Java's way of doing this is running the compiled version of Java code into a JVM.</p>
+        </div>
+      </div>
+
+      <!-- Q3 -->
+      <div class="qa-card">
+        <div class="qa-header" onclick="toggleQA(this)">
+          <span class="q-num">3</span>
+          <span class="q-text">Discuss the main components of a Java program and their roles</span>
+          <span class="qa-toggle">▼</span>
+        </div>
+        <div class="qa-body">
+          <div class="answer-label">Answer</div>
+          <p class="answer-text">Class - blueprint of a Java program. <br>
+
+Main Method - entry-point of a Java program. <br>
+
+Methods - block of code that performs a specific task. <br>
+
+Variables - used to store data. <br>
+
+Statements - instructions executed by the program. <br>
+
+Object - instances of class. <br>
+
+Comment - explanation and documentation.</p>
+        </div>
+      </div>
+
+      <div class="qa-card">
+        <div class="qa-header" onclick="toggleQA(this)">
+          <span class="q-num">4</span>
+          <span class="q-text">What are the differences between JDK, JRE, and JVM in Java</span>
+          <span class="qa-toggle">▼</span>
+        </div>
+        <div class="qa-body">
+          <div class="answer-label">Answer</div>
+          <p class="answer-text">JDK (Java Development Kit) - used to build Java applications. <br>
+
+JRE (Java Runtime Environment) - provides environment to run Java programs. <br>
+
+JVM (Java Virtual Machine) - core execution engine of Java.</p>
+        </div>
+      </div>
+
+      <div class="qa-card">
+        <div class="qa-header" onclick="toggleQA(this)">
+          <span class="q-num">5</span>
+          <span class="q-text">Explain the difference between interpreted and compiled languages. Is Java an interpreted or compiled language?</span>
+          <span class="qa-toggle">▼</span>
+        </div>
+        <div class="qa-body">
+          <div class="answer-label">Answer</div>
+          <p class="answer-text">Compiled Languages - converted directly into machine code that a processor can execute, leading to faster and efficient execution <br>
+
+Interpreted Languages - runs through a program line by line and execute each command. <br>
+Java is both compiled and interpreted</p>
+        </div>
+      </div>
+
+      <div class="reflection-box">
+        <div class="rl">📓 Reflection</div>
+        <p style="color:var(--muted); font-size:0.92rem;">
+          With this assignment, I learned the fundamentals of Java, how it works, its components, the difference between
+          JDK, JRE, and JDK, and identifying why is it both a compiled and interpreted language.
+        </p>
+      </div>
+
+      <!-- Add more questions below by copying the qa-card block above -->
+    </div>
+
+    <!-- ── SEATWORK ── -->
+    <div class="tab-panel" id="tab-seatwork">
+ <div class="activity-card">
+        <h3>Seatwork 1 — Smart Wallet System</h3>
+        <div class="code-block">
+          <pre>package Java;
+import java.util.Scanner;
+
+public class SmartWalletSystemORGAS {
+
+	public static void main(String[] args) {
+		int ch = 0, bal = 5000, cashIn = 0, trans = 0, count = 1;
+		
+		Scanner input = new Scanner(System.in);
+		
+		while(ch != 4) {
+			System.out.println("===== SMART WALLET MENU =====");
+			System.out.println("1. View Balance");
+			System.out.println("2. Cash In");
+			System.out.println("3. Send Money");
+			System.out.println("4. Exit");
+			System.out.println("Transaction Count: " + count);
+			System.out.print("Choice: ");
+			
+			ch = input.nextInt();
+			
+			switch(ch) {
+				case 1:
+					System.out.println("Your current balance is: " + bal);
+					count ++;
+				break;
+				
+				case 2:
+					System.out.println("Current balance: " + bal);
+					System.out.print("Type amount to cash in: ");
+						cashIn = input.nextInt();
+						bal += cashIn;
+					System.out.println("New balance: " + bal);
+						cashIn = 0;
+					count++;
+					break;
+				case 3:
+					System.out.println("Current balance: " + bal);
+				while (true) {
+					System.out.print("Type amount to transfer (Minimum of 100, Maximum of 1500): ");
+					trans = input.nextInt();
+					
+					if(trans < 100) {
+						System.out.println("Amount is less than 100!");
+					}else if(trans > 1500) {
+						System.out.println("Amount is greater than 1500!");
+					}else if(trans > bal) {
+						System.out.println("Amount exceeds current balance!");
+					}else {
+						bal -= trans;
+						System.out.println("Transfer successful!");
+						System.out.println("New balance: " + bal);
+						break;
+					}
+							}
+						count++;
+					break;
+					case 4:
+						count = 1;
+						System.out.println("Session Terminated. Thank you!");
+					break;
+					
+					default:
+	                    System.out.println("Invalid option. Please try again.");
+	                    break;
+				} 
+					
+			}
+			
+			
+		}
+		
+	}
+</pre>
+        </div>
+      <div class="learnings-box">
+          <div class="ll">Learnings</div>
+          <p>I learned to utilize control flow statements like switch and else-if statements to create menus and overall, a Smart Wallet System.</p>
+        </div>
+    <div class="pdf-view-box" style="margin-top:16px;">
+  <div style="font-size:0.72rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--accent); font-weight:500; margin-bottom:8px;">
+    📄 Attached PDF
+  </div>
+
+  <iframe 
+    src="files/Orgas_MidtermSeatwork2.pdf" 
+    style="width:100%; height:400px; border:1px solid var(--border); border-radius:10px;">
+  </iframe>
+  </div>
+
+ <div class="activity-card">
+        <h3>Seatwork 2 — Student Age Analyzer</h3>
+        <div class="code-block">
+          <pre>package Java;
+import java.util.Scanner;
+
+public class StudentAgeAnalyzerOrgas {
+	static void ageChecker(int x, String y){
+		if (x >= 0 && x <= 12) {
+			System.out.print(y + ", you are a Child.");	
+		}else if(x >= 13 && x <= 19) {
+			System.out.print(y + ", you are a Teenager.");	
+		}else if(x >= 20 && x<=59) {
+			System.out.print(y + ", you are an Adult.");	
+		}else if(x >= 60) {
+			System.out.print(y + ", you are a Senior Citizen.");	
+		}
+	}
+	public static void main(String[] args) {
+		Scanner userin = new Scanner(System.in);
+		
+			System.out.print("What is your name?: ");
+		String name = userin.nextLine();
+			System.out.print("How old are you?: ");
+		int age = userin.nextInt();
+		
+		ageChecker(age, name);
+		
+	}
+
+}
+</pre>
+        </div>
+            <div class="learnings-box">
+          <div class="ll">Learnings</div>
+          <p>I learned to utilize control else-if statements and use them to evaluate a certain variable whether or not they are in the right age range.</p>
+        </div>
+    <div class="pdf-view-box" style="margin-top:16px;">
+  <div style="font-size:0.72rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--accent); font-weight:500; margin-bottom:8px;">
+    📄 Attached PDF
+  </div>
+
+  <iframe 
+    src="files/BSIT2-3_ORGAS_KielNicolai_StudentAgeAnalyzer.pdf" 
+    style="width:100%; height:400px; border:1px solid var(--border); border-radius:10px;">
+  </iframe>
+  </div>
+  </div>
+    </div>
+    </div><!-- /tab-seatwork -->
+
+    <!-- ── ACTIVITIES ── -->
+    <div class="tab-panel" id="tab-activities">
+      
+      <!-- Activity 1 - Variables -->
+      <div class="activity-card">
+        <h3>Activity 1 — Variables</h3>
+
+        <h3 style="margin-top:24px;">📌 Part A</h3>
+
+        <table style="width:100%;border-collapse:collapse;margin-top:12px;font-size:0.9rem;">
+          <tr style="background:var(--surface2);">
+            <th style="padding:10px;border:1px solid var(--border);">Variable Name</th>
+            <th style="padding:10px;border:1px solid var(--border);">Data Type</th>
+            <th style="padding:10px;border:1px solid var(--border);">Variable Type</th>
+            <th style="padding:10px;border:1px solid var(--border);">Stored In</th>
+          </tr>
+          <tr><td style="padding:8px;border:1px solid var(--border);">owner</td><td style="padding:8px;border:1px solid var(--border);">String</td><td style="padding:8px;border:1px solid var(--border);">Instance</td><td style="padding:8px;border:1px solid var(--border);">Heap</td></tr>
+          <tr><td style="padding:8px;border:1px solid var(--border);">balance</td><td style="padding:8px;border:1px solid var(--border);">int</td><td style="padding:8px;border:1px solid var(--border);">Instance</td><td style="padding:8px;border:1px solid var(--border);">Heap</td></tr>
+          <tr><td style="padding:8px;border:1px solid var(--border);">acc1</td><td style="padding:8px;border:1px solid var(--border);">Non-Primitive/Object</td><td style="padding:8px;border:1px solid var(--border);">Local</td><td style="padding:8px;border:1px solid var(--border);">Stack</td></tr>
+          <tr><td style="padding:8px;border:1px solid var(--border);">acc2</td><td style="padding:8px;border:1px solid var(--border);">Non-Primitive/Object</td><td style="padding:8px;border:1px solid var(--border);">Local</td><td style="padding:8px;border:1px solid var(--border);">Stack</td></tr>
+          <tr><td style="padding:8px;border:1px solid var(--border);">acc3</td><td style="padding:8px;border:1px solid var(--border);">Non-Primitive/Object</td><td style="padding:8px;border:1px solid var(--border);">Local</td><td style="padding:8px;border:1px solid var(--border);">Stack</td></tr>
+        </table>
+
+        <h3 style="margin-top:24px;">📌 Part B</h3>
+        <table style="width:100%;border-collapse:collapse;margin-top:12px;font-size:0.88rem;">
+          <tr style="background:var(--surface2);">
+            <th style="padding:10px;border:1px solid var(--border);">Statement</th>
+            <th style="padding:10px;border:1px solid var(--border);">What Happens?</th>
+            <th style="padding:10px;border:1px solid var(--border);">Memory Impact</th>
+          </tr>
+          <tr><td style="padding:8px;border:1px solid var(--border);">Account acc1 = new Account("Carlos",5000);</td><td style="padding:8px;border:1px solid var(--border);">Creates Account object.</td><td style="padding:8px;border:1px solid var(--border);">Object stored in heap. The local non-primitive variable "acc1" stored in the stack.</td></tr>
+          <tr><td style="padding:8px;border:1px solid var(--border);">Account acc2 = new Account("Diana",7000);</td><td style="padding:8px;border:1px solid var(--border);">Creates second object.</td><td style="padding:8px;border:1px solid var(--border);">Object stored in heap. The local non-primitive variable "acc2" stored in the stack.</td></tr>
+          <tr><td style="padding:8px;border:1px solid var(--border);">Account acc3 = acc1;</td><td style="padding:8px;border:1px solid var(--border);">acc3 assigned to reference act1.</td><td style="padding:8px;border:1px solid var(--border);">A new local variable "acc3" stored in the heap and no new objects is stored in the stack since acc3 is pointed to acc1 with the same memory address. </td></tr>
+          <tr><td style="padding:8px;border:1px solid var(--border);">acc2.balance = 8000;</td><td style="padding:8px;border:1px solid var(--border);">Updates Diana's balance.</td><td style="padding:8px;border:1px solid var(--border);">The instance variable "balance" from acc2 has been updated from 7000 to 8000 </td></tr>
+          <tr><td style="padding:8px;border:1px solid var(--border);">acc3.owner = "Miguel";</td><td style="padding:8px;border:1px solid var(--border);">Updates owner name using acc3 reference.</td><td style="padding:8px;border:1px solid var(--border);">The instance variable "owner" from acc3 which is referenced or pointed to acc1 updates to "Miguel" since they share the same memory address, it affects acc1 as well.</td></tr>
+        </table>
+
+        <div class="code-block">
+          <span class="code-label">Output</span>
+          <pre>Miguel   5000.00
+Diana    8000.00
+Miguel   5000.00</pre>
+        </div>
+
+        <div class="learnings-box">
+          <div class="ll">Reflection</div>
+          <p>This activity showed stack and heap memory. It also showed multiple objects and some pointed to the same memory address, which can change multiple values.</p>
+        </div>
+      </div>
+
+<!-- Decision Structures -->
+      <div class="activity-card">
+        <h3>Activity 2 — Operators</h3>
+        <p>Using different operators to show possible operations in Java</p>
+
+        <p>Bitwise Operators</p>
+        <div class="code-block">
+          <pre>package Java;
+
+public class Bitwise {
+	public static void main (String[] args) {
+		int x = 33;
+		int y = 12;
+		
+		System.out.println(x & y);
+		System.out.println(x ^ y);
+		System.out.println(~y);
+		System.out.println(x &= y);
+		System.out.println(x ^= y);
+	}
+}
+</pre>
+        </div>
+
+                <div class="code-block">
+          <span class="code-label">OUTPUT</span>
+          <pre>0
+45
+-13
+0
+12
+</pre>
+  </div>
+        <p>Ternary Operators</p>
+        <div class="code-block">
+          <pre>package Java;
+
+public class Ternary {
+	public static void main(String[] args) {
+		int num1 = 76;
+		int num2 = 43;
+		String output = (num1>num2)? "Num 1 is bigger than Num 2" : 
+    "Num 2 is bigger than Num 1";
+		
+		System.out.println(output);
+	}
+}
+</pre>
+        </div>
+
+                <div class="code-block">
+          <span class="code-label">OUTPUT</span>
+          <pre>Num 1 is bigger than Num 2
+</pre>
+        </div>
+
+        <p>Assignment Operators</p>
+        <div class="code-block">
+          <pre>package Java;
+
+public class Assignment {
+	public static void main (String[] args) {
+		double x = 7;
+		double y = 6;
+		
+		x+=y;
+		System.out.println(x); // x = x + y = 13 | x = 13
+		
+		y-=x;
+		System.out.println(y); // y = y(6) - x (13)  = -7 | y = -7 		
+		
+		x*=y;
+		System.out.println(x); // x = x (13) * y (-7) = -91 | x = -91
+		
+		y/=x;
+		System.out.println(y); /* y = y (-7) / x (-91) = 0.07692307692307693 
+                | y = 0.07692307692307693 */
+		
+		
+	}
+}
+</pre>
+        </div>
+
+                <div class="code-block">
+          <span class="code-label">OUTPUT</span>
+          <pre>13.0
+-7.0
+-91.0
+0.07692307692307693
+</pre>
+  </div>
+        <p>Multiple Operators</p>
+        <div class="code-block">
+          <pre>package Java;
+
+public class Multiple_Operators {
+
+	public static void main(String[] args) {
+		int first = 12;
+		int second = 8;
+		
+		System.out.println(first + second);
+		System.out.println("first == second = " + (first == second));
+		System.out.println(first > 10 && second < first);
+		System.out.println(++first * second++);
+		System.out.println(first+=first);
+		System.out.println(first++ | ++second);
+
+	}
+
+}
+
+</pre>
+        </div>
+
+                <div class="code-block">
+          <span class="code-label">OUTPUT</span>
+          <pre>20
+first == second = false
+true
+104
+26
+26
+</pre>
+        </div>
+        <div class="learnings-box">
+          <div class="ll">Learnings</div>
+          <p>I learned how different operator influences and change each variable. I also learned that interchanging or combining different operators can totally change its output.</p>
+        </div>
+        <div class="pdf-view-box" style="margin-top:16px;">
+  <div style="font-size:0.72rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--accent); font-weight:500; margin-bottom:8px;">
+    📄 Attached PDF
+  </div>
+
+  <iframe 
+    src="files/BSIT2-3_Orgas_Kiel_CodeAnalysisActivity_2.pdf" 
+    style="width:100%; height:400px; border:1px solid var(--border); border-radius:10px;">
+  </iframe>
+
+  <div style="margin-top:8px;">
+  </div>
+
+</div>
+      </div>
+
+      <div class="activity-card">
+        <h3>Activity 3 —  Basic ATM System</h3>
+        <p>Defining and calling methods to create reusable blocks of code.</p>
+
+        <div class="code-block">
+          <span class="code-label">Java</span>
+          <pre>package Java;
+import java.util.Scanner;
+
+public class BasicATMSystemOrgas {
+
+	public static void main(String[] args) {
+		int ch = 0, bal = 5000, cashIn = 0, with = 0;
+		
+		Scanner input = new Scanner(System.in);
+		
+		do{
+			System.out.println("===== ATM MENU =====");
+			System.out.println("1. Check Balance");
+			System.out.println("2. Deposit");
+			System.out.println("3. Withdraw");
+			System.out.println("4. Exit");
+			System.out.print("Choice: ");
+			
+			ch = input.nextInt();
+			
+			switch(ch) {
+				case 1:
+					System.out.println("Your current balance is: " + bal);
+
+				break;
+				
+				case 2:
+					System.out.println("Current balance: " + bal);
+					System.out.print("Type amount to deposit: ");
+						cashIn = input.nextInt();
+						bal += cashIn;
+					System.out.println("New balance: " + bal);
+						cashIn = 0;
+
+					break;
+				case 3:
+					System.out.println("Current balance: " + bal);
+				while (true) {
+					System.out.print("Type amount to withdraw (Maximum of 2000): ");
+					with = input.nextInt();
+					
+					if(with > 2000) {
+						System.out.println("Amount exceeds 2000!");
+					}else {
+						bal -= with;
+						System.out.println("Withdraw successful!");
+						System.out.println("New balance: " + bal);
+						break;
+					}
+				}
+					break;
+					case 4:
+						System.out.println("Session Terminated. Thank you!");
+					break;
+					
+					default:
+	                    System.out.println("Invalid option. Please try again.");
+	                    break;
+				} 
+					
+		} while(ch != 4);
+			
+			
+		}
+		
+	}
+</pre>
+        </div>
+
+  <div class="learnings-box">
+          <div class="ll">Learnings</div>
+          <p>I learned to use scanners and control flow statements like switch, for creating menus in Java programs.</p>
+        </div>
+        <div class="pdf-view-box" style="margin-top:16px;">
+          <div style="font-size:0.72rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--accent); font-weight:500; margin-bottom:8px;">📄 Attached PDF</div>
+          <iframe src="files/BSIT2-3_Orgas_KielNicolai_BasicATMMachine.pdf" style="width:100%; height:400px; border:1px solid var(--border); border-radius:10px;"></iframe>
+        </div>
+      </div><!-- /activity-card activity 3 -->
+
+      <div class="activity-card">
+        <h3>Activity 4 — Scholarship Enrollment Assessment System</h3>
+        <div class="code-block">
+          <pre>package Java;
+
+import java.util.Scanner;
+
+public class EnrollmentAssessmentSystemOrgas {
+
+	public static void main(String[] args) {
+		
+		String adResult ="", recProg = ""; 
+		
+		
+		Scanner userin = new Scanner(System.in);
+		
+		System.out.print("Student Name: ");
+		String studName = userin.nextLine();
+		
+		System.out.print("Senior High School Strand (STEM, ABM, HUMSS, TVL, Others): ");
+		String strand = userin.nextLine();
+		
+		System.out.print("Entrance Exam Score (0-100): ");
+		double entraScore = userin.nextDouble();
+		
+		System.out.print("Interview Score (0–100): ");
+		double interScore = userin.nextDouble();
+		
+		userin.nextLine();
+		
+		System.out.print("First Screening Result (Pass/Fail): ");
+		String screenRes = userin.nextLine();
+		
+		double scoreFinal = (entraScore * 0.60) + (interScore * 0.40);
+		
+		if("Pass".equalsIgnoreCase(screenRes)) {
+			if (scoreFinal >= 85) {
+				adResult = "Admitted with Scholarship";			
+			}
+			else if(scoreFinal >= 75) {
+				adResult = "Admitted";
+			}
+			else if(scoreFinal >= 65) {
+				adResult = "Waitlisted";
+			}
+			else {
+				adResult = "Not Qualified";
+			}
+		}else {
+			adResult = "Not Qualified";
+		}
+		
+		switch(strand.toUpperCase()) {
+			case "STEM":
+				recProg = "BSIT / BSCS";
+			break;
+			
+			case "ABM":
+				recProg = "BSBA";
+			break;
+				
+			case "HUMMS":
+				recProg = "BSED / AB Communication";
+			break;
+			
+			case "TVL":
+				recProg = "BSIT";
+			break;
+			
+			case "OTHERS":
+				recProg = "General Program";
+				
+			break;
+		}
+		
+		System.out.println("=====ENROLLMENT ASSESSMENT RESULT=====");
+		System.out.println("Student Name: " + studName);
+		System.out.println("SHS Strand: " + strand);
+		System.out.println("Final Evaluation Score: " + scoreFinal);
+		System.out.println("Admission Result: " + adResult);
+		System.out.println("Recommended Program: " + recProg);
+	
+	}
+
+}
+
+</pre>
+        </div>
+        <div class="learnings-box">
+          <div class="ll">Reflection</div>
+          <p>I learned to use scanners and control flow statements like switch and else-if statements, for creating menus and other conditional statements in Java programs.</p>
+        </div>
+        <div class="pdf-view-box" style="margin-top:16px;">
+          <div style="font-size:0.72rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--accent); font-weight:500; margin-bottom:8px;">📄 Attached PDF</div>
+          <iframe src="files/BSIT2-3_Orgas_KielNicolai_EnrollmentAssessmentSystem.pdf" style="width:100%; height:400px; border:1px solid var(--border); border-radius:10px;"></iframe>
+        </div>
+      </div><!-- /activity-card activity 4 -->
+
+      <div class="activity-card">
+        <h3>Activity 5 — Personal Expense</h3>
+        <div class="code-block">
+          <pre>package Java;
+import java.util.Scanner;
+
+public class ExpenseTrackerOrgas {
+
+	static void titleShow() {
+		System.out.println("Expense Tracker");
+	}
+	
+	public static double ExpensesCalcu(double foo, double trans, double oth){
+		
+		return foo+trans+oth;
+	}
+	
+	static String BudgetChecker(double tot, double bud) {
+		if(tot > bud) {
+			return "You exceeded your budget.";
+		}else {
+			return "You are within your budget.";
+		}
+		
+	}
+		
+	
+	static void Remaining(double tot, double bud, String stat) {
+		double rem = bud - tot;
+		
+		System.out.println("Your total expenses is: " + tot);
+		System.out.println("Your remaining budget is: " + rem);
+		System.out.println(stat);
+		
+	}
+
+		
+	public static void main(String[] args) {
+		
+		titleShow();
+		Scanner userin = new Scanner(System.in);
+		
+		
+		System.out.print("What is your budget?");
+		double budget = userin.nextInt();
+		
+		System.out.print("How much is your food expense?");
+		double food = userin.nextInt();
+		
+		System.out.print("How much is your transportation expense?");
+		double transport = userin.nextInt();
+		
+		System.out.print("How much is your other expense?");
+		double other = userin.nextInt();
+		
+		double total = ExpensesCalcu(food, transport, other);
+		String status = BudgetChecker(total,budget);
+		
+		Remaining(total,budget, status);
+			
+
+		}
+
+	}
+</pre>
+        </div>
+        <div class="learnings-box">
+          <div class="ll">Reflection</div>
+          <p>I learned to use methods with attributes, so that my code will be more efficient. 
+            It also helps it to be modular and reusable so that when it has errors, I can easily fix and
+            shorten my code so I won't have to retype the code block over and over again.</p>
+        </div>
+        <div class="pdf-view-box" style="margin-top:16px;">
+          <div style="font-size:0.72rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--accent); font-weight:500; margin-bottom:8px;">📄 Attached PDF</div>
+          <iframe src="files/ExpenseTrackerOrgas.pdf" style="width:100%; height:400px; border:1px solid var(--border); border-radius:10px;"></iframe>
+        </div>
+      </div><!-- /activity-card activity 4 (2) -->
+
+    </div><!-- /tab-activities -->
+
+    <!-- ── EXAM ── -->
+    <div class="tab-panel" id="tab-exam">
+      <div class="reflection-box">
+        <div class="rl">📓 Exam Reflection</div>
+        <p style="color:var(--muted); font-size:0.92rem;">
+          In the exam, I applied what I learned from Object-Oriented Programming. From the basics of Java, variables, operators,
+          control flow statements, methods, to the concepts of inheritance, polymorphism, encapsulation, etc. The exam helped me to
+          refresh what I've learned from the subject.
+        </p>
+      </div>
+    </div>
+
+  </div><!-- /section -->
+</div>
+
+<!-- ═══════════════ FINAL PAGE ═══════════════ -->
+<div class="page" id="page-final">
+  <div class="coming-soon">
+    <div class="big">🚧</div>
+    <h2>Final Term In progress....</h2>
+  </div>
+</div>
+
+<!-- ═══════════════ CONTACT PAGE ═══════════════ -->
+<div class="page" id="page-contact">
+  <div class="section">
+    <h2 class="section-title">Contact</h2>
+    <p class="section-desc">Get in touch or connect with me.</p>
+
+    <div class="contact-grid">
+      <div class="contact-item">
+        <div class="ci-label">Full Name</div>
+        <div class="ci-value">Kiel Nicolai D. Orgas</div>
+      </div>
+      <div class="contact-item">
+        <div class="ci-label">Email</div>
+        <div class="ci-value">orgas.kielnicolai.dizon@gmail</div>
+      </div>
+      <div class="contact-item">
+        <div class="ci-label">School</div>
+        <div class="ci-value">Polytechnic University of the Philippines</div>
+      </div>
+      <div class="contact-item">
+        <div class="ci-label">Section</div>
+        <div class="ci-value">BSIT 2-3</div>
+      </div>
+      <div class="contact-item">
+        <div class="ci-label">Facebook / Messenger</div>
+        <div class="ci-value">https://www.facebook.com/knicolai22</div>
+      </div>
+      <div class="contact-item">
+        <div class="ci-label">GitHub</div>
+        <div class="ci-value">https://github.com/nicoco329</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ─── SCRIPTS ─── -->
+<script>
+  function showPage(name) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+    document.getElementById('page-' + name).classList.add('active');
+    document.getElementById('nav-' + name).classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    return false;
+  }
+
+  function showTab(name) {
+    document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById('tab-' + name).classList.add('active');
+    event.target.classList.add('active');
+  }
+
+  function toggleQA(header) {
+    const body = header.nextElementSibling;
+    const toggle = header.querySelector('.qa-toggle');
+    const isOpen = body.classList.contains('open');
+    body.classList.toggle('open', !isOpen);
+    toggle.style.transform = isOpen ? 'rotate(0deg)' : 'rotate(180deg)';
+  }
+</script>
+</body>
+</html>
